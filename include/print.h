@@ -52,6 +52,7 @@ printIP (const T& t)
 {   
     constexpr int s =sizeof(t);
     std::vector<int> vec;
+    vec.reserve(s);
     for (auto i = 0;i < s;++i)
     {
         vec.insert(vec.begin(),(t >> 8*i) & 0xFF);
