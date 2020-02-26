@@ -24,7 +24,7 @@ deploy:
     local-dir: html
     on:
     branch: master
-  - provider: script
+  -   provider: script
     skip_cleanup: true
     on:
     branch: master
