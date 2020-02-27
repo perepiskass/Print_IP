@@ -14,7 +14,6 @@ endif()
 
 # ДОБАВЛЯЕМ В ПРОЕКТ ДОПОЛНИТЕЛЬНЫЕ БИБЛИОТЕКИ ДЛЯ ТЕСТИРОВАНИЯ-------------
 # Опция "REQUIRED" говорит о том, что библиотека необходима проекту. Без нее cmake решит, что отсутствие данной библиотеки - не так уж и страшно, и будет собирать дальше.
-# Добовляем в проект библиотеку Boost and GoogleTest и нужный в ней компонент unit_test_framework (если нужен другой то пишем через пробел)
 # find_package(Boost COMPONENTS unit_test_framework REQUIRED)
 find_package(GTest REQUIRED)
 find_package(Threads)
